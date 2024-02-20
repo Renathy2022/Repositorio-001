@@ -15,15 +15,37 @@ class AlumnosDisp {
       function __construct() {
 
       }
-
-      function ValidarNombre($Vmonbre='SIN ESPECIFCAR')
-      {
-          
+      /*DESEMCAPSULAR LA VARIABLE PRIVADA $NOMBRE*/
+      function ObtenerNombre(){
+            return $this-> Nombre;
       }
+      /*DESEMCAPSULAR LA VARIABLE $APELLIDO*/
+      function ObtenerApellido(){
+            return $this-> Apellido;
+      }
+      /*VALIDACION DE LA VARIABLE SEA VALIDA*/
+      function ValidarNombre($VNombre='SIN ESPECIFCAR')
+      {
+            $nombreActual = $this->ObtenerNombre();
+      /*VALIDAR QUE LA VARIABLE NOMBRE SEA VALIDA*/
+            if($nombreActual === $VNombre){
+                  echo "El nombre es valido";
+      }
+            else {
+                  echo "El nombre NO es valido";
+            }
 
+      }
+       /*VALIDACION DE LA VARIABLE SEA VALIDA*/
       function ValidarApeliido($VApellido='SIN ESPECIFCAR')
       {
-          
+          $nombreApellido = $this->ObtenerApellido();
+            if ($nombreApellido === $VApellido){
+                  echo "El apellido es valido";
+            }
+            else{
+                  echo "El apellido NO es valido";
+            }
       }
 }
 ?>
