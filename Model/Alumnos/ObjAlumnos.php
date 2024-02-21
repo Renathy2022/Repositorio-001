@@ -3,7 +3,7 @@
 class AlumnosDisp {
       var $Id=0;
       private var $Nombre="SIN ESPECIFICAR";
-      var $Apellido="SIN ESPECIFICAR";
+      private var $Apellido="SIN ESPECIFICAR";
       var $Edad=0;
       var $Correo="SIN ESPECIFICAR";
       var $Telefono="SIN ESPECIFICAR";
