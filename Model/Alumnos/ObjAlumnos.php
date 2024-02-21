@@ -12,7 +12,9 @@ class AlumnosDisp {
       var $UsuarioCreacion="SIN ESPECIFICAR";
       var $UsuarioModifica="SIN ESPECIFICAR";
 
-      function __construct() {
+      function __construct($nombre, $apellido) {
+            this->Nombre = $nombre;
+            this->Apellido = $apellido;
 
       }
       /*DESEMCAPSULAR LA VARIABLE PRIVADA $NOMBRE*/
